@@ -24,6 +24,9 @@ Facilitates monitoring and analysis of system activities.
 4. Notification Service
 Sends notifications to users regarding transaction status updates.
 Provides real-time information to users to keep them informed about their transactions.
+5. Transaction Failure Service
+Handles the failure of transactions and rollsback to compensate the initiator.
+
 Initiation Flow
 User Interaction: User initiates a transaction by providing product details, cost, currency, and merchant information.
 Validation: Wallet Service validates the transaction by checking wallet balance, currency validity, and any restrictions.
@@ -31,6 +34,7 @@ Approval (if needed): Referral to Guardian/Parent for approval in case of certai
 Transaction Processing: Payment Service processes the transaction by deducting the amount from the user's wallet, crediting the merchant's account, and updating the transaction ledger.
 Notification: Notification Service sends status updates to the user and notifications to the merchant upon successful processing.
 Fee Collection: Wallet Service collects wallet fees and credits the merchant's account after deduction.
+
 Transaction Management
 Ensures reliability and integrity of transactions.
 Compensates for any failures appropriately.
@@ -40,5 +44,5 @@ Usage
 To deploy and use the Wallet Microservice System, follow the instructions provided in each microservice's README.md file.
 
 Contributors
-[Your Name]
-[Your Team Members]
+Sourabh Savagunji
+Gaurav Gupta
